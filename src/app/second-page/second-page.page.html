@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>secondPage</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">secondPage</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<!-- Mensaje de bienvenida con el nombre de usuario -->
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Bienvenido/a</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <p>Hola, {{ username }}! Estás en la segunda página.</p>
+  </ion-card-content>
+</ion-card>
+
+<ion-content>
+  <ion-button [routerLink]="['']">Regresar</ion-button>
+</ion-content>
+
